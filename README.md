@@ -1,7 +1,7 @@
 ## Lighthouse score badges
 
-Be proud of your [Lighthouse](https://github.com/googlechrome/lighthouse)! Display
-it in a Github readme, on your site, in a presentation,...wherever.
+Be proud of your [Lighthouse](https://github.com/googlechrome/lighthouse) score! Display
+this badge in a Github readme, on your site, in a presentation,...wherever.
 
 Large:
 
