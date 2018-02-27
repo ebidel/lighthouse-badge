@@ -1,6 +1,7 @@
 ## Lighthouse score badges
 
-Tell people how well your site does in [Lighthouse](https://github.com/googlechrome/lighthouse). Drop your score badge in a Github readme or on your site.
+Be proud of your [Lighthouse](https://github.com/googlechrome/lighthouse)! Display
+it in a Github readme, on your site, in a presentation,...wherever.
 
 Large:
 
@@ -16,13 +17,23 @@ Compact:
 
 ### Examples
 
+API: `https://lighthouse-badge.appspot.com/?score=<SCORE>[&compact]`
+
+Parameters:
+
+- `score`: required. set from [0,100].
+- `compact`: optional. Renders smaller image instead.
+
 Markdown
+
 ```
 [![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100)](https://developers.google.com/web/tools/lighthouse/)
 
 [![Lighthouse score: 65/100](https://lighthouse-badge.appspot.com/?score=65&compact)](https://developers.google.com/web/tools/lighthouse/)
 ```
+
 HTML
+
 ```
 <img src="https://lighthouse-badge.appspot.com?score=100">
 <img src="https://lighthouse-badge.appspot.com?score=65&compact">
