@@ -29,7 +29,7 @@ Parameters:
 
 - `score`: required. set from [0,100].
 - `compact`: optional. Renders smaller image instead.
-- `category`: optional. Specify an report section label (e.g. "PWA", "Perf", "A11y").
+- `category`: optional. Specify a report section label (e.g. "PWA", "Perf", "A11y", "Best Practices")
 
 Markdown
 
