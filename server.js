@@ -23,7 +23,7 @@ const analytics = require('universal-analytics');
 
 const lhLogoDataURL = `data:image/png;base64,${fs.readFileSync('./public/lhicon-small.png').toString('base64')}`;
 
-function generateBadgeURL(score, compact = false) {
+function generateBadgeURL(score, compact = false, category = null) {
   const RATINGS = {
     PASS: {label: 'pass', minScore: 75},
     AVERAGE: {label: 'average', minScore: 45},
@@ -33,8 +33,14 @@ function generateBadgeURL(score, compact = false) {
   // Clamp input [0, 100] and round.
   score = Math.round(Math.min(Math.max(0, score), 100));
 
+  const cat = category || '';
+  let label = `Lighthouse ${cat} Score`;
+  if (compact) {
+    label = cat;
+  }
+
   const url = new URL(`https://img.shields.io/badge/-${score}-grey.svg`);
-  url.searchParams.set('label', !compact ? 'Lighthouse Score' : '');
+  url.searchParams.set('label', label);
   url.searchParams.set('colorA', '242ffd');
   url.searchParams.set('style', 'flat-square');
   url.searchParams.set('logo', lhLogoDataURL);
@@ -69,6 +75,7 @@ app.get('/', async (req, res) => {
   const currentUrl = new URL(`${req.protocol}://${req.get('host')}${req.url}`);
   const compact = currentUrl.searchParams.has('compact');
   const score = Number(currentUrl.searchParams.get('score'));
+  const category = currentUrl.searchParams.get('category');
 
   try {
     const visitor = analytics('UA-85519014-5', {https: true});
@@ -77,7 +84,7 @@ app.get('/', async (req, res) => {
     // noop
   }
 
-  request.get(generateBadgeURL(score, compact), (err, res2, body) => {
+  request.get(generateBadgeURL(score, compact, category), (err, res2, body) => {
     if (err) {
       res.status(400).send(err);
     }
