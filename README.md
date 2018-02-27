@@ -5,14 +5,14 @@ this badge in a Github readme, on your site, in a presentation,...wherever.
 
 Large:
 
-[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=86)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100)](https://github.com/ebidel/lighthouse-badge)
 [![Lighthouse score: 65/100](https://lighthouse-badge.appspot.com/?score=65)](https://github.com/ebidel/lighthouse-badge)
 [![Lighthouse score: 35/100](https://lighthouse-badge.appspot.com/?score=35)](https://github.com/ebidel/lighthouse-badge)
 
 Compact:
 
-[![Lighthouse score: 65/100](https://lighthouse-badge.appspot.com/?score=65&compact)](https://github.com/ebidel/lighthouse-badge)
 [![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 65/100](https://lighthouse-badge.appspot.com/?score=65&compact)](https://github.com/ebidel/lighthouse-badge)
 [![Lighthouse score: 35/100](https://lighthouse-badge.appspot.com/?score=35&compact)](https://github.com/ebidel/lighthouse-badge)
 
 ### Examples
