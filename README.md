@@ -35,9 +35,13 @@ Markdown
 
 ```
 [![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100)](https://github.com/ebidel/lighthouse-badge)
+```
 
-[![Lighthouse score: 85/100](https://lighthouse-badge.appspot.com/?score=65&compact&category=PWA)](https://github.com/ebidel/lighthouse-badge)```
+```
+[![Lighthouse score: 85/100](https://lighthouse-badge.appspot.com/?score=65&compact&category=PWA)](https://github.com/ebidel/lighthouse-badge)
+```
 
+```
 [![Lighthouse score: 65/100](https://lighthouse-badge.appspot.com/?score=65&compact)](https://github.com/ebidel/lighthouse-badge)
 ```
 
@@ -47,11 +51,15 @@ HTML
 <a href="https://github.com/ebidel/lighthouse-badge" target="_blank">
   <img src="https://lighthouse-badge.appspot.com?score=100">
 </a>
+```
 
+```
 <a href="https://github.com/ebidel/lighthouse-badge" target="_blank">
   <img src="https://lighthouse-badge.appspot.com?score=85&category=PWA">
 </a>
+```
 
+```
 <a href="https://github.com/ebidel/lighthouse-badge" target="_blank">
   <img src="https://lighthouse-badge.appspot.com?score=165&compact">
 </a>
