@@ -1,0 +1,12 @@
+runtime: nodejs
+env: flex
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 5
+
+skip_files:
+- ^(.*/)?.*\.sh$
+- ^(.*/)?tests
+- ^(.*/)?.*\.md$
+- ^node_modules/

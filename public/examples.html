@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lighthouse Score Badge Previews</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+<p><img src="/?score=35"> <code>&lt;img src="https://lighthouse-badge.appspot.com?score=35"></code></p>
+<p><img src="/?score=65"> <code>&lt;img src="https://lighthouse-badge.appspot.com?score=65"></code></p>
+<p><img src="/?score=95"><code>&lt;img src="https://lighthouse-badge.appspot.com?score=95"></code>></p>
+
+<p><img src="/?score=35&compact"> <code>&lt;img src="https://lighthouse-badge.appspot.com?score=35&compact"></code></p>
+<p></p><img src="/?score=65&compact"> <code>&lt;img src="https://lighthouse-badge.appspot.com?score=65&compact"></code></p>
+<p><img src="/?score=95&compact"> <code>&lt;img src="https://lighthouse-badge.appspot.com?score=95&compact"></code></p>
+
+<!-- <img id="preview" src="" hidden>
+<script>
+(async() => {
+
+const preview = document.querySelector('#preview');
+
+async function fetchFile(file) {
+  const resp = await fetch(file);
+  const blob = await resp.blob();
+
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = e => {
+      resolve(e.target.result);
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  });
+}
+
+//const lhLogoDataURL = await fetchFile('lhicon-small.png');
+const lhLogoDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAC/ElEQVR4AY2SA5QsVxCG/7q3e9CzGqye/V5s27ZtG4dxcpwcxbZt207Wtr07blXFmt0k72tclouWb+TjDwi/IIACCGiFArAKLAADhEIMK8gsYCYRsBALSOADQ1AnqB6BvMZLYhCCyCx5AgRhII6qCIpCYhpsaf7ONx8KPHOgeWTSxeveE+c4R68D3wEVCt90Y03fYFnfYHHvULhhIJjrIACHl/ffZS1UaaQ0/BCuL2t/gJavA8+B+ru8cdn5N8C1srnSVCY2NZOYmooOTVblGtJ6ncNDJbnQeFLSo9UvzqALZAH8z5jFjpJhW2VDVqK9UuUAAXLvVVyeW2fz0kQbRrU9Hv32wxVGHiiaLQw/OVMxPVM+OlE5OFw5MJSo76zaAd/tuPvnrs/5xkEn17bPyCdvR/YTvzBm44Irr2vrLm3ttXo6NdL4jaN2fESNv5zsW+V80e9Z2eWLv0dgPxEUQIhJLIoyS8JB1loUYTqvdoiNnHZil2kpNxh2Xf/R+6tfbK+uKmLPB+Ev1HrLvYoyX2vJu5TOqayjcil0RKrHl24wuWC1KbK6/SOdxIwJg7mwSfKO+qu9CApwheIBe2H/j0ua34q3vKrtmrjsDaqeo8MKtjTzZNhYPDa02ctnaSfDRgwGgmRjLlTBmn79IpzR3Av2nUh17053TK1ahCRYUaFlzIZQJDknvk33eicPLN3MjUa5O4y8iCL4/ynMmjCJma0WfXXYLdOBhPZ9k8QMArwWbosCPM6XR7KRUoYw/AVdX67pr0WCSHgOt4UEWkAAEzyFQSomM57JRlvq5tW/E+69vWfqCThbaUORKaIFAjARkyEGk6sxTkgCUaAqj13tgK7RNXekhz5qLolHNlk8ODmG7qQ3ZWIkTJNABIiLBH1aUSUSY96sh9dp9Oc3Slk3W8Nh3feLNjMGCMRL+BL0SiRXpaaXqMF1dMu66vulNGDQkgu/c3d8iis/FHOIJAQuJg45ElZQIfYA+EQ+hJQLykGnhTLklauxHc0vj/wJ/k92/rQz1oQAAAAASUVORK5CYII=';
+
+const RATINGS = {
+  PASS: {label: 'pass', minScore: 75},
+  AVERAGE: {label: 'average', minScore: 45},
+  FAIL: {label: 'fail'},
+};
+
+function generateBadge(score, compact = false) {
+  // Clamp input [0, 100] and round.
+  score = Math.round(Math.min(Math.max(0, score), 100));
+
+  const url = new URL(`https://img.shields.io/badge/-${score}-grey.svg`);
+  url.searchParams.set('label', !compact ? 'Lighthouse Score' : '');
+  url.searchParams.set('colorA', '242ffd');
+  url.searchParams.set('style', 'flat-square');
+  url.searchParams.set('logo', lhLogoDataURL);
+  // url.searchParams.set('maxAge', 3600);
+
+  let colorB = 'df332f';
+  if (score >= RATINGS.PASS.minScore) {
+    colorB = '2b882f';
+  } else if (score >= RATINGS.AVERAGE.minScore) {
+    colorB = 'ef6c00';
+  }
+
+  url.searchParams.set('colorB', colorB);
+
+  preview.src = url.href;
+  preview.title = `Lighthouse score: ${score}/100`;
+  preview.alt = preview.title;
+  preview.onload = e => preview.hidden = false;
+}
+
+
+const currentUrl = new URL(location);
+const compact = currentUrl.searchParams.has('compact');
+const score = Number(currentUrl.searchParams.get('score'));
+
+// generateBadge(score, compact);
+
+})();
+</script> -->
+</body>
+</html>

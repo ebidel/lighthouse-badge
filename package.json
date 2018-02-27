@@ -1,0 +1,25 @@
+{
+  "name": "lighthouse-score-badge",
+  "version": "0.0.1",
+  "description": "Lighthouse Score Badge",
+  "author": "Eric Bidelman <ebidel@>",
+  "license": "Apache-2.0",
+  "main": "server.js",
+  "engines": {
+    "node": ">=9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "deploy": "gcloud app deploy app.yaml --project lighthouse-badge"
+  },
+  "keywords": [
+    "lighthouse",
+    "badge"
+  ],
+  "dependencies": {
+    "express": "^4.16.2",
+    "request": "^2.83.0",
+    "universal-analytics": "^0.4.16"
+  }
+}
