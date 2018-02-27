@@ -38,7 +38,7 @@ Markdown
 ```
 
 ```
-[![Lighthouse score: 85/100](https://lighthouse-badge.appspot.com/?score=65&compact&category=PWA)](https://github.com/ebidel/lighthouse-badge)
+[![Lighthouse score: 85/100](https://lighthouse-badge.appspot.com/?score=85&compact&category=PWA)](https://github.com/ebidel/lighthouse-badge)
 ```
 
 ```
