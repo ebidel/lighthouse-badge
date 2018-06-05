@@ -55,12 +55,12 @@ HTML
 
 ```html
 <a href="https://github.com/ebidel/lighthouse-badge" target="_blank" rel="noopener">
-  <img src="https://lighthouse-badge.appspot.com?score=85&amp;category=PWA">
+  <img src="https://lighthouse-badge.appspot.com?score=85&category=PWA">
 </a>
 ```
 
 ```html
 <a href="https://github.com/ebidel/lighthouse-badge" target="_blank" rel="noopener">
-  <img src="https://lighthouse-badge.appspot.com?score=165&amp;compact">
+  <img src="https://lighthouse-badge.appspot.com?score=165&compact">
 </a>
 ```
